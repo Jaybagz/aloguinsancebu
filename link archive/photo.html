@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Aloguinsan Cebu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../js/controller1/3.js"></script>
+<script src="../js/controller1/1.js"></script>
+<link rel="stylesheet" type="text/css" href="../js/controller1/4.css">
+<script src="../js/controller1/2.js"></script>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/theme.css">
+<link rel="stylesheet" href="../css/css.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="shortcut icon" type="image/png" href="../img/FINAL.png"/>
+
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+</style>
+<style>
+
+</head>
+<body>
+<style>
+
+.lo img{
+  margin-left: 10px;
+  position: relative;
+
+}
+
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+    -moz-transition: all .3s ease; /* Firefox */
+    -o-transition: all .3s ease; /* IE 9 */\
+    -ms-transition: all .3s ease; /* Opera */
+    transition: all .3s ease;
+    
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.15); /* Safari and Chrome */
+    -moz-transform:scale(1.15); /* Firefox */
+    -ms-transform:scale(1.15); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.15); /* Opera */
+    transform:translatZ(0) scale(1.15);
+
+}
+
+
+
+
+.gov img {
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ .gov1 img {
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ </style>
+
+<!-- Navbar -->
+<li><div class="logo"><img src="../img/baan.png"></div></li>
+  <div class="top">
+<ul class="navbar theme-d2 left-align large">
+      <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+        <a class="w3-padding-large w3-hover-white large theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      </li>
+  <div class="lo">
+    <li><div class="logo"><img src="../img/baan.png"></div></li></div>
+    <div class="w3-right">
+      <li class="w3-hide-small"><a href="../home.html" class="w3-padding-large w3-hover-white"><i>HOME</i></a></li>
+      <li class="w3-hide-small"><a href="history.html" class="w3-padding-large w3-hover-white"><i>HISTORY</i></a></li>
+  
+
+      <li class="w3-hide-small w3-dropdown-hover">
+                <a href="" class="w3-padding-large w3-hover-white"><I>OFFICIAL</I></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="#" target="_blank">DEPARTMENT HEAD</a>
+                    <a href="sb.html" target="_blank">SB MEMBERS</a>
+                    <a href="#" target="_blank">MUNICIPAL HEAD OFFICE</a>
+                    <a href="#" target="_blank">BARANGAY OFFICIALS</a>
+                    <a href="#" target="_blank">PARISH PRIEST</a>
+
+                  </div>
+      </li>
+
+      <li class="w3-hide-small w3-dropdown-hover">
+                <a href="" class="w3-padding-large w3-hover-white"><I>GEOGRAPHY</I></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="#" target="_blank">BARANGAY</a>
+                    <a href="#" target="_blank">LOCATION</a>
+                    <a href="#" target="_blank">POPULATION</a>
+                    <a href="#" target="_blank">ECONOMIC PROFILE</a>
+                    <a href="#" target="_blank">PHYSICAL CHARACTERISTICS</a>
+                    <a href="map.html">MAP</a>
+                 
+                  </div>
+      </li>
+
+      <li class="w3-hide-small w3-dropdown-hover">
+                <a href="#" class="w3-padding-large w3-hover-white"><I>TOURISM</I></a>
+                  <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="#" target="_blank">BOJO RIVER CRUISE</a>
+                    <a href="#" target="_blank">FARMHOUSE</a>
+                    <a href="#" target="_blank">HERMIT'S COVE</a>
+                    <a href="#" target="_blank">DOLPHIN WATCHING</a>
+                    <a href="#" target="_blank">GLASS BOTTOM BOAT</a>
+                    <a href="#" target="_blank">SNORKELING</a>
+                    <a href="#" target="_blank">BALUARTE</a>
+                    <a href="#" target="_blank">SAN. RAFAEL PARISH</a>
+
+                  </div>
+      </li>
+  
+      <li class="w3-hide-small"><a href="map.html" class="w3-padding-large w3-hover-white"><i>CONTACT</i></a></li>
+</ul>
+ </div>
+
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:0px">
+  <ul class="navbar left-align large theme">
+    <center><li><a class="w3-padding-large" href="#">HOME</a></li></center>
+    <center><li><a class="w3-padding-large" href="#">MAP</a></li></center>
+    <center><li><a class="w3-padding-large" href="#">GEOGRAPHY</a></li></center>
+    <center><li><a class="w3-padding-large" href="#">OFFICIAL</a></li></center>
+    <center><li><a class="w3-padding-large" href="#">TOURISM</a></li></center>
+    <center><li><a class="w3-padding-large" href="#">CONTACT</a></li></center>
+  </ul>
+</div>
+
+<!-- Page Container -->
+  <!-- The Grid -->
+
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:10px">  
+  <ul class="navbar theme-d2 left-align large"></ul> 
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Municipal Mayor</h4>
+         <p class="w3-center"><img src="../img/id/mayor.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-user-circle fa-fw w3-margin-right text-theme"></i> Augustus Caesar L. Moreno</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right text-theme"></i> Aloguinsan, Cebu</p>
+         <center><a href="farm.html" class="w3-btn theme-d2 w3-margin-bottom"><i class="fa fa-hand-o-right"></i>&nbsp;KNOW MORE</a></center>
+        </div>
+      </div>
+      <br>
+
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Municipal Vice-Mayor</h4>
+         <p class="w3-center"><img src="../img/id/vice.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-user-circle fa-fw w3-margin-right text-theme"></i> Cesare Ignatius G. Moreno</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right text-theme"></i> Aloguinsan, Cebu</p>
+         <center><a href="farm.html" class="w3-btn theme-d2 w3-margin-bottom"><i class="fa fa-hand-o-right"></i>&nbsp;KNOW MORE</a></center>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card-2 w3-round">
+        <div class="w3-accordion w3-white">
+          <button onclick="myFunction(&#39;Demo1&#39;)" class="w3-btn-block theme-l1 left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Full Disclosure</button>
+          
+          <div id="Demo1" class="w3-accordion-content w3-container">
+          <center><u><p>BIDDING PROJECTS and Other Files</p></u></center>
+      
+            <a href="../files/1.pdf" target="_blank">sustainability action plan</a>
+            <a href="../files/2.pdf"target="_blank">BAETAS OPERATIONS AND ACTIVITIES</a>
+            <a href="../files/3.pdf" target="_blank">RESCUE TRUCK</a>
+            <a href="../files/4.pdf" target="_blank">R200</a>
+            <a href="../files/5.pdf" target="_blank">GARBAGE TRUCK</a>
+            <a href="../files/6.pdf" target="_blank">FN-100 Z SURGICAL UNIT</a>
+            <a href="../files/7.pdf" target="_blank">airboat</a>
+
+
+          </div>
+          
+
+          <button onclick="myFunction(&#39;Demo2&#39;)" class="w3-btn-block theme-l1 left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <div id="Demo2" class="w3-accordion-content w3-container">
+            <p>Some other text..</p>
+          </div>
+          <a href="photo.html" class="w3-btn-block theme-l1 left-align"><i class="fa fa-camera fa-fw w3-margin-right"></i>Photo Gallery</a>
+         
+             <a href="video.html" class="w3-btn-block theme-l1 left-align"><i class="fa fa-play-circle-o fa-fw w3-margin-right"></i>Video Gallery</a>
+        </div>          
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card-2 w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small theme-d5">blah</span>
+            <span class="w3-tag w3-small theme-d4">blah</span>
+            <span class="w3-tag w3-small theme-d3">blah</span>
+            <span class="w3-tag w3-small theme-d2">blah</span>
+            <span class="w3-tag w3-small theme-d1">blah</span>
+            <span class="w3-tag w3-small theme-d1">blah</span>
+            <span class="w3-tag w3-small theme-d1">blah</span>
+            <span class="w3-tag w3-small theme-d2">blah</span>
+            <span class="w3-tag w3-small theme-d3">blah</span>
+            <span class="w3-tag w3-small theme-d4">blah</span>
+            <span class="w3-tag w3-small theme-d5">blah</span>
+          </p>
+
+
+        </div>
+      </div>
+
+      <div class="w3-card-2 w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>
+            <center><b>GOVERNMENT'S OFFICIAL SITES</b></center>
+          </p>
+
+
+        </div>
+      </div>
+      <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center">
+      <div class="gov">
+          <div class="img-hover" align="center">
+          
+              <a class="pic" href="http://cebu.gov.ph/" target="_blank">
+                  <img src="../img/cebulogo.png" alt="cebu province" title="cebu province">
+              </a>
+              
+              <a class="pic" href="http://csc.gov.ph/" target="_blank">
+                  <img src="../img/csclogo.png" alt="Civil Service" title="Civil Service">
+              </a>
+                      
+              <a class="pic" href="http://www.dbm.gov.ph/" target="_blank">
+                  <img src="../img/dbmlogo.png" alt="Dbm" title="Dbm">
+              </a>
+            
+              <a class="pic" href="http://pagasa.dost.gov.ph/" target="_blank">
+                  <img src="../img/pagasa.png" alt="Pag-asa" title="Pag-asa">
+              </a>
+            
+              <a class="pic" href="http://dilg.gov.ph/" target="_blank">
+                  <img src="../img/dilg.png" alt="DILG" title="DILG">
+              </a>
+            
+              <a class="pic" href="http://deped.gov.ph/" target="_blank">
+                  <img src="../img/depedlogo.png" alt="DepEd" title="DepEd">
+              </a>
+            
+              <a class="pic" href="http://www.pagibigfund.gov.ph/" target="_blank">
+                  <img src="../img/pagibiglogo.jpg" alt="Pag-ibig" title="Pag-ibig">
+              </a>
+            
+              <a class="pic" href="http://www.gsis.gov.ph/" target="_blank">
+                  <img src="../img/gsislogo.jpg" alt="GSIS" title="GSIS">
+              </a>
+            
+              <a class="pic" href="https://www.philhealth.gov.ph/" target="_blank">
+                  <img src="../img/phil.png" alt="Philhealth" title="Philhealth">
+              </a>
+            
+              <a class="pic" href="http://www.coa.gov.ph/" target="_blank">
+                  <img src="../img/coa.png" alt="Coa" title="Coa">
+              </a>      
+          
+        </div>
+</div>    
+        
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+    <!--  <div class="w3-container w3-round theme-l4 w3-border theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display=&#39;none&#39;" class="w3-hover-text-grey w3-closebtn">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>-->
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <!---start sa slide-->                  
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+
+          <div class="w3-card-2 w3-round w3-white">
+
+<!-- Jssor Slider End -->
+ <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:740px;margin:0px auto 12px;">
+ <center><h1>Photo Gallery</h1></center>
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="../img/trans/1.jpg" alt="1" data-description="ldilashoi" />
+                </li>
+                <li><img src="../img/trans/2.JPG" alt="2" data-description="hdauih" />
+                </li>
+                <li><img src="../img/trans/3.JPG" alt="3" data-description="hfohsihi" />
+                </li>
+                <li><img src="../img/trans/4.JPG" alt="4" data-description="fhiosh" />
+                </li>
+                <li><img src="../img/trans/5.JPG" alt="5" data-description="iuowyrf" />
+                </li>
+                <li><img src="../img/trans/6.jpg" alt="6" data-description="o;nufouiwey" />
+                </li>
+                <li><img src="../img/trans/7.jpg" alt="7" data-description="lusdvohdr" />
+                </li>
+                <li><img src="../img/trans/8.jpg" alt="8" data-description="ppefigrinodio" />
+                </li>
+                <li><img src="../img/trans/9.jpg" alt="9" data-description="iidfidfjgm[s" />
+                </li>
+                <li><img src="../img/trans/10.jpg" alt="10" data-description="iijfskjkjgfjgdj" />
+                </li>
+                <li><img src="../img/trans/11.jpg" alt="11" data-description="isrh hoiwuhiew" />
+                </li>
+                <li><img src="../img/trans/12.jpg" alt="12" data-description="jjjdzjvbozdgbjn" />
+                </li>
+                <li><img src="../img/trans/13.jpg" alt="13" data-description="jkhfkndindinid" />
+                </li>
+                <li><img src="../img/trans/14.jpg" alt="14" data-description="jdgvrirkj.gtnjbt" />
+                </li>
+                <li><img src="../img/trans/15.jpg" alt="15" data-description="kijshkjkjjrdtkfd" />
+                </li>
+
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="../img/trans/1-tn.jpg" alt="1" /></li>
+                <li><img src="../img/trans/2-tn.JPG" alt="2" /></li>
+                <li><img src="../img/trans/3-tn.JPG" alt="3" /></li>
+                <li><img src="../img/trans/4-tn.JPG" alt="4" /></li>
+                <li><img src="../img/trans/5-tn.JPG" alt="5" /></li>
+                <li><img src="../img/trans/6-tn.jpg" alt="6" /></li>
+                <li><img src="../img/trans/7-tn.jpg" alt="7" /></li>
+                <li><img src="../img/trans/8-tn.jpg" alt="8" /></li>
+                <li><img src="../img/trans/9-tn.jpg" alt="9" /></li>
+                <li><img src="../img/trans/10-tn.jpg" alt="10" /></li>
+                <li><img src="../img/trans/11-tn.jpg" alt="11" /></li>
+                <li><img src="../img/trans/12-tn.jpg" alt="12" /></li>
+                <li><img src="../img/trans/13-tn.jpg" alt="13" /></li>
+                <li><img src="../img/trans/14-tn.jpg" alt="14" /></li>
+                <li><img src="../img/trans/15-tn.jpg" alt="15" /></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+      
+     
+   </div>
+    <!-- Right Column -->
+    <div class="w3-col m2">
+   
+    <!--  <div class="w3-card-2 w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="img/avatar6.png" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-btn w3-green w3-btn-block w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-btn w3-red w3-btn-block w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br> -->
+      
+    
+        
+
+        <div class="w3-accordion w3-white">
+             
+
+          <a href="#" class="w3-btn-block theme-l1 left-align"><i class="fa fa-check-circle fa-fw w3-margin-right"></i>Mangrove Planting</a>
+          <a href="#" class="w3-btn-block theme-l1 left-align"><i class="fa fa-check-circle fa-fw w3-margin-right"></i>Protected Corals</a>
+          <a href="#" class="w3-btn-block theme-l1 left-align"><i class="fa fa-check-circle fa-fw w3-margin-right"></i>Aloguinsan Fiesta</a>
+          <a href="#" class="w3-btn-block theme-l1 left-align"><i class="fa fa-check-circle fa-fw w3-margin-right"></i>Costal Clean-up</a>
+          <a href="#" class="w3-btn-block theme-l1 left-align"><i class="fa fa-check-circle fa-fw w3-margin-right"></i>Monthly Meeting</a>
+          <a href="#" class="w3-btn-block theme-l1 left-align"><i class="fa fa-check-circle fa-fw w3-margin-right"></i>AWARDS</a>
+            
+          <div id="Demo1" class="w3-accordion-content w3-container">
+              <center><u><p>BIDDING PROJECTS and Other Files</p></u></center>
+      
+            <a href="files/1.pdf" target="_blank">sustainability action plan</a>
+          </div>
+        </div>
+        
+      <br>
+      
+       
+      <div class="gov1">
+                  <div class="img-hover" align="center">
+          
+                    <a class="pic" href="http://cebu.gov.ph/" target="_blank">
+                      <img src="../img/vm.png" alt="cebu province" title="cebu province" style="width:100%">
+                    </a>
+        </div>
+      </div>
+  
+
+      <div class="gov1">
+                  <div class="img-hover" align="center">
+          
+                    <a class="pic" href="http://cebu.gov.ph/" target="_blank">
+                      <img src="../img/chat.jpg" alt="cebu province" title="cebu province" style="width:100%">
+                    </a>
+        </div>
+      </div>
+
+      <div class="gov1">
+                  <div class="img-hover" align="center">
+          
+                    <a class="pic" href="http://cebu.gov.ph/" target="_blank">
+                      <img src="../img/BAETAS LOGO.png" alt="cebu province" title="cebu province" style="width:100%">
+                    </a>
+        </div>
+      </div>
+            <div class="gov1">
+                  <div class="img-hover" align="center">
+          
+                    <a class="pic" href="http://cebu.gov.ph/" target="_blank">
+                      <img src="../img/KEA LOGO JPG.jpg" alt="cebu province" title="cebu province" style="width:100%">
+                    </a>
+        </div>
+      </div>
+
+            <div class="gov1">
+                  <div class="img-hover" align="center">
+          
+                    <a class="pic" href="http://cebu.gov.ph/" target="_blank">
+                      <img src="../img/denr-logo.jpg" alt="cebu province" title="cebu province" style="width:100%">
+                    </a>
+        </div>
+      </div>
+
+
+
+
+  
+        
+
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container theme-d3 w3-padding-16">
+  <center><h5>MUNICIPALITY OF ALOGUINSAN</h5>
+
+             <a href="https://plus.google.com/108644139952084259460" class="fa fa-google w3-btn theme-d2 w3-margin-bottom" target="_blank">&nbsp;Message us on Google</a>
+
+            <a href="https://www.facebook.com/Aloguinsan-River-Eco-Cultural-Tour-321967567122/" class="fa fa-thumbs-up w3-btn theme-d2 w3-margin-bottom" target="_blank">&nbsp;Like us on facebook</a>
+
+            
+            <p>ALRIGHT RESERVED 2016 </p>
+  </center>
+</footer>
+
+
+  
+ 
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += "theme-d1";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("theme-d1", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+ 
+</body>
+</html>
