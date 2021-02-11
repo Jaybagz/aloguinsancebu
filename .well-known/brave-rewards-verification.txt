@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: aloguinsancebu.netlify.app
+Token: 3ff3ad5f564bda6c94487fb9acfd36b9fd1e167861a5b3afc9247439838e03fb
