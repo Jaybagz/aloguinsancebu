@@ -390,7 +390,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 @media only screen and (min-width:601px){
 .w3-col.m1{width:8.33333%}
 .w3-col.m2{
-width:16.66666%;
+width:20%;
 position:fixed;
 right:20px;
 float:right;
@@ -399,7 +399,7 @@ overflow: scroll}
 
 
 .w3-col.m3,.w3-quarter{
-  width: 24.9999%;
+    width:20%;
     margin-left: 10px;
     height: 100vh;
     overflow-y: scroll;
@@ -411,7 +411,7 @@ overflow: scroll}
 .w3-col.m5{width:41.66666%}
 .w3-col.m6,.w3-half{width:49.99999%}
 /* .w3-col.m7{width:58.33333%} original */
-.w3-col.m7{width:50.33333%}
+.w3-col.m7{width:57%}
 .w3-col.m8,.w3-twothird{width:66.66666%}
 .w3-col.m9,.w3-threequarter{width:74.99999%}
 .w3-col.m10{width:83.33333%}
@@ -505,7 +505,7 @@ overflow: scroll}
 .w3-code{line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .w3-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
 .w3-example,.w3-code{ margin-top: 90px; margin:20px 0}.w3-card{border:1px solid #ccc}
-.w3-card-2,.w3-example{margin-left:10px;width:95%;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),2px 2px 10px 0 rgba(0,0,0,0.12)!important}
+.w3-card-2,.w3-example{margin-left:10px;width:94%;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),2px 2px 10px 0 rgba(0,0,0,0.12)!important}
 .w31-card-2,.w31-example{box-shadow:0 0px 0px 0 rgba(0,0,0,0.16),0 0px 0px 0 rgba(0,0,0,0.12)!important}
 .w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
 .w3-card-8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
