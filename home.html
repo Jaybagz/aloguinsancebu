@@ -26,127 +26,11 @@
 <!-- Navbar -->
 
 <style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
-X`  <style>
 
-</head>
-<body>
-<style>
-
-
-.lo img{
-  margin-left: 10px;
-  position: relative;
-
-
-}
-
-
-
-.img-hover img {
-    -webkit-transition: all .3s ease; /* Safari and Chrome */
-    -moz-transition: all .3s ease; /* Firefox */
-    -o-transition: all .3s ease; /* IE 9 */\
-    -ms-transition: all .3s ease; /* Opera */
-    transition: all .3s ease;
-    
-}
-.img-hover img:hover {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform:translateZ(0) scale(1.15); /* Safari and Chrome */
-    -moz-transform:scale(1.15); /* Firefox */
-    -ms-transform:scale(1.15); /* IE 9 */
-    -o-transform:translatZ(0) scale(1.15); /* Opera */
-    transform:translatZ(0) scale(1.15);
-
-}
-
-
-.rectangle{
-  height: 50px;
-  width: 100%;
-  background-color: #0000;
-}
-
-
-.gov img {
-  width: 200px;
-  margin-top: 20px;
-  margin-bottom: 20px;
- }
- .gov1 img {
-  width: 200px;
-  margin-top: 20px;
-  margin-bottom: 20px;
- }
-
-.tales {
-  width: 100%;
-}
-.carousel-inner{
-  width:100%;
-  max-height: 400px !important;
-}
-#myCarousel.carousel.slide {
-    width: 100%; 
-    max-width: 400px !important;
-}
-
-
-
-.container{
-width:100%;
-height:400px;
-border-top: 0px;
- 
-}
-
-.navbar{
-  overflow:hidden;
-  background-color: #35a708;
-  position:fixed
-  top:0;
-  width: 100%;
-  height: 60px;
-}
-.navbar a{
-  float: left;
-  display:block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration:none;
-  font-size: 17px;
-}
-.nav-item{
-  color:white;
-
-}
-.nav-item a:hover{
- background-color: #99f0b6;
-
-}
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-
-
-
-
-}
-.carousel-indicators .active{
-
-
-    background-color: #35a708;
-
-
-   
-
-}
-  
  </style> 
-<!-- Navbar -->
+</head>
+ <body>
+ <!-- Navbar -->
 <!--li><div class="logo"><img src="img/baan.png"></div></li-->
  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="lo">
@@ -256,11 +140,24 @@ border-top: 0px;
 <div class="w3-container w3-content" style="max-width:1400px;margin-top:70px">  
   <!--ul class="navbar theme-d2 left-align large"></ul--> 
   <div class="w3-row">
-    <!-- Left Column -->
-    <div class="w3-col m3">
-      <!-- Profile -->
-      <div class="w3-card-2 w3-round w3-white">
+    
+    
+    
+  <!-- Left Column -->
 
+
+
+  <!-- <div class="scrollbar" id="style-15">
+    <div class="force-overflow"></div>
+  </div> -->
+    <!-- <div class="w3-col m3"style="position:fixed;left:0px;float:left;height:100vh; overflow-y: hidden;"> -->
+      <div class="w3-col m3"id="style-15">
+        
+          <!-- <div id="style-15"style="position: relative;"> -->
+      <!-- Profile -->
+     
+      
+      <div class="w3-card-2 w3-round w3-white">
 
 
 
@@ -290,7 +187,7 @@ border-top: 0px;
       <!-- Accordion -->
       <div class="w3-card-2 w3-round">
         <div class="w3-accordion w3-white">
-          <button onclick="myFunction(&#39;Demo1&#39;)" class="w3-btn-block theme-l1 left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Full Disclosure</button>
+          <button onclick="myFunction()" class="w3-btn-block theme-l1 left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Full Disclosure</button>
           
           <div id="Demo1" class="w3-accordion-content w3-container">
           <center><u><p>BIDDING PROJECTS and Other Files</p></u></center>
@@ -307,7 +204,7 @@ border-top: 0px;
           </div>
           
 
-          <button onclick="myFunction(&#39;Demo2&#39;)" class="w3-btn-block theme-l1 left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <button onclick="myFunction()" class="w3-btn-block theme-l1 left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
           <div id="Demo2" class="w3-accordion-content w3-container">
             <p>Some other text..</p>
           </div>
@@ -443,12 +340,15 @@ border-top: 0px;
       </div>
       <br>
       
+      <!-- scroll effects -->
+ 
    
     </div>
+      
     
     <!-- Middle Column -->
     <!---start sa slide-->                  
-    <div class="w3-col m7">
+    <div class="w3-col m7"style="position:absolute;left:30%;float:left;">
     
       <div class="w31-container w3-card-2 w3-white w3-round w3-margin">
             <div class="carousel slide carousel-fade" data-ride="carousel"data-interval="2000" id="jpweb"> 
@@ -607,10 +507,10 @@ border-top: 0px;
     </div>
     
     <!-- Right Column -->
-    <div class="w3-col m2">
+    <div class="w3-col m2"id="style-15">
    
     
-        
+      <div class="w3-card-2 w3-round w3-white">
 
         <div class="w3-accordion w3-white">
              
@@ -629,7 +529,7 @@ border-top: 0px;
             <a href="files/1.pdf" target="_blank">sustainability action plan</a>
           </div>
         </div>
-        
+        </div>
       <br>
       
        <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center">
@@ -678,15 +578,14 @@ border-top: 0px;
         </div>
       </div>
 
-
-
+</div>
 
   
         
 </div>
       
     <!-- End Right Column -->
-    </div>
+  
     
   <!-- End Grid -->
   </div>
@@ -710,34 +609,7 @@ border-top: 0px;
 
 
 <!-- Footer -->
-  <section id="footer">
-    <div class="container"style="width: 100%;height: 25%;">
-      <div class="row text-center text-xs-center text-sm-left text-md-left">
-        <div class="col-xs-12 col-sm-4 col-md-4">
-          
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4">
-         
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4">
-       
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-          <ul class="list-unstyled list-inline social text-center">
-            <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
-            <li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href=""><i class="fa fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href=""><i class="fa fa-google-plus"></i></a></li>
-            <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
-          </ul>
-        </div>
-        <hr>
-      </div>  
- 
-    </div>
-  </section>
+
   <!-- ./Footer -->
 
 
@@ -773,7 +645,25 @@ function openNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+$(document).ready(function () {
+          if (!$.browser.webkit) {
+              $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+          }
+      });
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
