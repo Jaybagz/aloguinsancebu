@@ -868,7 +868,7 @@ section .section-title {
   top: 50%;
   left: 50%; */
   /* transform: translateX(-50%) translateY(-50%); */
-  color: #217f84;
+  color: black;
   font-size:20px;
   font-family: Orbitron;
   /* letter-spacing: 7px; */
