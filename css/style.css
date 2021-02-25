@@ -850,7 +850,31 @@ section .section-title {
 
 .container {width: 100%; margin: 0 auto; overflow: hidden;}
 
-.clock {width:100%; margin:0 auto; padding:30px; border:1px solid #333; color:rgb(255, 0, 0); }
+
+
+
+
+.clock {
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translateX(-50%) translateY(-50%); */
+  color: #217f84;
+  font-size:20px;
+  font-family: Orbitron;
+  /* letter-spacing: 7px; */
+
+ 
+
+
+}
+
+
+
+
+
+
+/* .clock {width:100%; margin:0 auto; padding:30px; border:1px solid #333; color:rgb(255, 0, 0); } */
 
 #Date { font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; font-size:12px; text-align:center; text-shadow:0 0 5px #00c6ff; }
 
@@ -878,6 +902,41 @@ ul li { display:inline; font-size:16px; text-align:center; font-family:'BebasNeu
 }
 
 
+
+
+
+
+
+
+
+
+.calendar-today {
+  background-color: #fefefe;
+  border: 8px solid #217f84;
+  color: #217f84;
+  font-family: "Lato", sans serif;
+  padding: 10px 20px 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.month-label {
+  border-bottom: 2px solid #217f84;
+  font-size: 22px;
+}
+
+.day-label {
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 120px;
+  padding-top: 30px;
+}
+
+
+
+
+
+/* date */
 
 
 
