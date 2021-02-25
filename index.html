@@ -504,16 +504,37 @@
     
     <!-- Right Column -->
     <div class="w3-col m2"id="style-15">
-      <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center">
-      <div style="text-align:center;padding:1em 0;"> 
+     <!-- <div class="w3-card-2 w3-round w3-padding-16 w3-center "style="background-color:#35a708;"> -->
+      <!-- <div style="text-align:center;padding:1em 0;"> 
         <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/country/ph">
-          <span style="color:gray;">Current local time in</span><br />Philippines</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FManila" width="100%" height="115" frameborder="0" seamless></iframe> </div>
-      </div>
+          <span style="color:rgb(211, 25, 25);">Current local time in</span><br />Philippines</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FManila" width="100%" height="115" frameborder="0" seamless></iframe> 
+        </div> -->
+
+        <!-- <div id="MyClockDisplay" class="clock" onload="showTime()"></div> -->
+
+
+
+
+     
+  
+        <div class="calendar-today">
+          <div class="month-label"></div>
+          <div class="day-label"></div>
+          <div class="weekday-label"></div>
+          <div class="current-time"></div>
+          <div class="year-label"></div>
+          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+          
+        </div>
+       
+       
+   
+         <!-- </div> -->
+
       <br>
      
      
-    
-    
+     
       <div class="elfsight-app-32d25189-598e-4167-831d-31fb76a50e52"></div>
       
                 
@@ -657,23 +678,6 @@ $(document).ready(function () {
 
 
 
-      function clock(){var date=new Date();var weekday=date.getDay();var year=date.getYear();var month=date.getMonth();var day=date.getDate();var hour=date.getHours();var minute=date.getMinutes();var second=date.getSeconds();var days=new Array ('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday' );var months=new Array('January','February','March','April','May','June','July','August','September','October','November','December');var monthname=months[month];var dayname=days[weekday];var ap;if(year<1000){year=year+1900} if(hour>=12){hour=hour-12;ap='PM'}else{ap='AM'} if(minute<10){minute='0'+minute} if(second<10){second='0'+second};
-document.getElementById('time').innerHTML=hour+' : '+ minute +' : '+second+' ' +ap; 
-document.getElementById('da').innerHTML=dayname;
-document.getElementById('dt').innerHTML=monthname+' '+day+', '+year;
-setTimeout('clock()',1000 )}window.onload=function(){clock()}
-
-
-
-
-
-
-
-
-
-
-
-
 </script>
 
 
@@ -684,40 +688,105 @@ setTimeout('clock()',1000 )}window.onload=function(){clock()}
 
 
 
-<script type="text/javascript">
-  $(document).ready(function() {
-  // Create two variable with the names of the months and days in an array
-  var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
-  var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+<script>
   
-  // Create a newDate() object
-  var newDate = new Date();
-  // Extract the current date from Date object
-  newDate.setDate(newDate.getDate());
-  // Output the day, date, month and year   
-  $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
-  
-  setInterval( function() {
-    // Create a newDate() object and extract the seconds of the current time on the visitor's
-    var seconds = new Date().getSeconds();
-    // Add a leading zero to seconds value
-    $("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
-    },1000);
+  function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
     
-  setInterval( function() {
-    // Create a newDate() object and extract the minutes of the current time on the visitor's
-    var minutes = new Date().getMinutes();
-    // Add a leading zero to the minutes value
-    $("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
-      },1000);
+    if(h == 0){
+        h = 12;
+    }
     
-  setInterval( function() {
-    // Create a newDate() object and extract the hours of the current time on the visitor's
-    var hours = new Date().getHours();
-    // Add a leading zero to the hours value
-    $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
-      }, 1000);	
-  });
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
+
+
+
+
+
+
+
+// date
+
+
+
+
+
+
+
+
+
+
+  </script>
+  <script>
+var date1 = new Date();
+var day = date1.getDate();
+var year = date1.getFullYear();
+
+var monthNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+var dayNames = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
+
+var monthLabel = (document.getElementsByClassName("month-label")[0].innerHTML =
+  monthNames[date1.getMonth()]);
+
+var dayLabel = (document.getElementsByClassName(
+  "day-label"
+)[0].innerHTML = day);
+
+var weekdayLabel = (document.getElementsByClassName(
+  "weekday-label"
+)[0].innerHTML = dayNames[date1.getDay(0)]);
+
+var yearlabel = (document.getElementsByClassName(
+  "year-label"
+)[0].innerHTML = year);
+
+
+
+
+
+
   </script>
 
 
